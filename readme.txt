@@ -1,0 +1,12 @@
+
+The overall objective of this project is to model perovskite solar cells using a probability density function, specifically represented as a mixture of Gaussians. The process involves several stages. First, the absorber material (perovskite) of the solar cells is represented together with information about the synthesis process. The material representation is obtained through Local Linear Embedding (LLE) using the script LLE_prvskt_material.py. Subsequently, the script synthesis_descriptors.py is employed to generate a dataset containing the descriptors for each solar cell device (observation). The dataset consists of descriptors obtained from the Perovskite Database Project. A coding process was applied in which each perovskite material is represented by a four-dimensional vector derived through a Local Linear Embedding (LLE) method. Additional descriptors capture parameters associated with the synthesis process of the perovskite solar cell.
+
+The GMM model is then trained on the newly obtained data (pdf_gmm.py) and its performance in regression tasks is evaluated against the XGBoost method. The same GMM model is further applied to conditional data generation tasks. In this setting, the material information is assumed to be known, and a target PCE is specified to generate plausible configurations (conditional_generator.py). By leveraging the probability density function, the approach seeks to identify plausible synthesis conditions for new materials. Generating such observations, even from underexplored regions of the parameter space, could support the discovery of novel materials by serving as a preliminary step prior to estimation with state-of-the-art discriminative machine learning algorithms, such as XGBoost.
+
+Additionally, illustrative algorithms are provided to highlight key aspects of this work. The script toy_gmm.py employs two variables (Jsc and Eg) to demonstrate the modeling and regression process using GMMs. The script toy_LLE.py presents the results of representing materials via LLE, including cases not contained in the Perovskite Database Project.
+
+- LLE_prvskt_material.py : Material representation through Local Linear Embedding (LLE).
+- synthesis_descriptors.py : It obtains a new dataset consists of descriptors obtained from the Perovskite Database Project.
+- conditional_generator.py : Generation of conditional samples; that is, generating new samples from partial information.
+- toy_gmm.py : depicts the modeling process using GMMs.
+- toy_LLE.py : shows how materials can be represented by using LLE.
