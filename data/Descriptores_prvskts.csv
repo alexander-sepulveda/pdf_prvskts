@@ -1,0 +1,46 @@
+Variable;Description
+Perovskite_single_crystal;Only one perovskite crystal
+Perovskite_composition_short_form;The perovskite composition written without coefficients
+Perovskite_composition_long_form;The perovskite composition
+Cell_stack_sequence;The stack sequence describing the cell layer by layer.
+Cell_architecture;direction in which layers are deposited. The two most common are nip (normal) and pin (inverted).
+Perovskite_composition_perovskite_ABC3_structure;TRUE if the photo-absorber has a perovskite structure
+Perovskite_composition_inorganic;TRUE if the perovskite does not contain any organic ions.
+Perovskite_composition_leadfree;TRUE if the perovskite is completely lead free
+Perovskite_additives_compounds;List of the dopants and additives that are in the perovskite
+Perovskite_additives_concentrations;The concentration of the dopants/additives.
+Perovskite_thickness;The thickness of the perovskite layer
+Perovskite_band_gap;The band gap of the perovskite
+Perovskite_composition_a_ions;A_ions
+Perovskite_composition_a_ions_coefficients;A_ions_coefficients
+Perovskite_composition_b_ions;B_ions
+Perovskite_composition_b_ions_coefficients;B_ions_coefficients
+Perovskite_composition_c_ions;X_ions
+Perovskite_composition_c_ions_coefficients;X_ions_coefficients
+Perovskite_deposition_procedure;Deposition procedure of methods
+Perovskite_deposition_thermal_annealing_temperature;Deposition thermal annealing temperature
+Perovskite_deposition_thermal_annealing_time;Deposition thermal annealing time
+Perovskite_deposition_thermal_annealing_relative_humidity;The relative humidity during the thermal annealing
+Perovskite_deposition_synthesis_atmosphere_relative_humidity;The relative humidity during each deposition step
+Perovskite_deposition_thermal_annealing_pressure;The atmospheric pressure during the thermal annealing
+Perovskite_deposition_solvents;The solvents used in each deposition procedure for each layer in the stack
+Perovskite_deposition_solvents_mixing_ratios;The mixing ratios for mixed solvents
+ETL_stack_sequence;ETL stack sequence
+ETL_deposition_procedure;ETL deposition procedure methods
+ETL_thickness;ETL thickness
+ETL_deposition_synthesis_atmosphere_relative_humidity;The relative humidity during each deposition step
+HTL_stack_sequence;HTL stack sequence
+HTL_deposition_procedure;HTL deposition procedure methods
+HTL_thickness_list;HTL thickness list
+HTL_deposition_synthesis_atmosphere_relative_humidity;The relative humidity during each deposition step
+Cell_area_measured;The effective area measurements under illumination
+Backcontact_deposition_procedure;Backcontact deposition procedure
+Backcontact_stack_sequence;Backcontact stack sequence
+Backcontact_thickness_list;Backcontact thickness list
+JV_default_Voc;Voc
+JV_default_Jsc;Jsc
+JV_default_FF;FF
+JV_default_PCE;PCE
+Stability_PCE_T80;The time after which the cell performance has degraded by 20 % with respect to the initial performance
+Stability_PCE_Te80;An estimated T80 for cells that were not measured sufficiently long for them to degrade by 20% with respect to the initial performance.
+Ref_ID;The primary database key
